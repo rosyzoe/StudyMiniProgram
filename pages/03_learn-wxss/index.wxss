@@ -1,0 +1,16 @@
+/* pages/03_learn-wxss/index.wxss */
+
+/* 页面样式 */
+.title {
+  background-color: indigo;
+}
+
+.name {
+  background-color: red;
+}
+
+.box {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: pink;
+}

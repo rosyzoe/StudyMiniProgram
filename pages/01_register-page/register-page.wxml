@@ -1,0 +1,27 @@
+<view class="banner">
+  <swiper indicator-dots indicator-color="#fff" autoplay interval="3000" circular>
+    <block wx:for="{{ banners }}" wx:key="index">
+      <swiper-item>
+        <image class="img" src="{{ item.coverimg }}" mode=""/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view>
+    你的金币: {{ counter }}
+  </view>
+
+  <view class="btns">
+    <block wx:for="{{ btns }}" wx:key="*this">
+      <button data-color="{{ item }}" style="background-color: {{ item }};" bindtap="btnsClick">{{ item }}</button>
+    </block>
+  </view>
+</view>
+
+<view>
+    <block wx:for="{{ list }}" wx:key="item">
+      <view>
+        列表数据: {{ item }}
+      </view>
+    </block>
+  </view>

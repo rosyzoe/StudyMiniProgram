@@ -1,0 +1,16 @@
+
+<!-- 1.事件的基本使用 -->
+<button bindtap="onBtnTap">点击触发事件</button>
+
+<!-- 2.参数传递的案例练习 -->
+<view class="tab-control">
+  <block wx:for="{{ tabControl }}" wx:key="*this">
+    <view 
+      class="item {{ index === currentIndex ? 'active' : ''}}" 
+      data-index="{{ index }}" 
+      bindtap="ontabControl"
+    >
+      <text>{{ item }}</text>
+    </view>
+  </block>
+</view>

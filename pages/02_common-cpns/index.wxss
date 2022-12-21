@@ -1,0 +1,19 @@
+/* pages/02_common-cpns/index.wxss */
+
+.title {
+  font-size: 40px;
+  color: #f00;
+}
+
+.scrollbox {
+  display: flex;
+
+  height: 150px;
+  background-color: green;
+}
+
+.item {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,13 @@
+<!--pages/03_learn-wxss/index.wxml-->
+
+<!-- 1.使用全局样式: app.wxss内设置的样式 -->
+<view class="title">哈哈哈哈</view>
+
+<!-- 2.使用页面样式: 本文件夹的index.wxss设置的样式 -->
+<view class="name">coderzxx</view>
+
+<!-- 3.使用行内样式 -->
+<view style="background-color: green;">嘿嘿嘿嘿</view>
+
+<!-- 4.rpx尺寸单位 -->
+<view class="box"></view>

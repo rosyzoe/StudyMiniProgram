@@ -1,0 +1,5 @@
+/* pages/register-page/register-page.wxss */
+
+.img {
+  width: 100%;
+}

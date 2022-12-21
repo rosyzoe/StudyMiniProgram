@@ -1,0 +1,9 @@
+
+<view class="header-section" bindtap="onTitleTap">
+  <text>{{ title }}</text>
+</view>
+
+
+<view class="content-section">
+  <text>{{ content }}</text>
+</view>

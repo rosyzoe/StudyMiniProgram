@@ -1,0 +1,6 @@
+
+<!-- 1.自定义组件的基本使用 -->
+<!-- <section-info/> -->
+
+<!-- 2.组件通信 -->
+<section-info title="文章头部" content="文章内容区域" bind:onTitleClick="ontitleClick" />

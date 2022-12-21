@@ -1,0 +1,21 @@
+<view class="my-slot">
+
+<view class="header">
+  <view>
+    Header
+  </view>
+</view>
+
+<view class="content">
+  <!-- 小程序中的插槽没有默认值, 通过css设置可以实现 -->
+    <slot></slot>
+</view>
+
+<view class="default">我是默认插槽</view>
+
+<view class="footer">
+  <view>
+    Footer
+  </view>
+</view>
+</view>

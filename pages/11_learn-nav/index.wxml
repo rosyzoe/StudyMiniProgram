@@ -1,0 +1,2 @@
+
+<button bindtap="onNavTo">点击跳转到detail</button>

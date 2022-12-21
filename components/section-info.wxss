@@ -1,0 +1,14 @@
+/* components/section-info.wxss *//* pages/07_learn-component/index.wxss */
+
+.header-section {
+  font-size: 60rpx;
+  font-weight: bold;
+  /* color: red; */
+  background-color: royalblue;
+}
+
+.content-section {
+  height: 100rpx;
+  background-color: salmon;
+  color: #fff;
+}

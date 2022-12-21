@@ -1,0 +1,74 @@
+
+<!-- 1.mustache语法 -->
+<view>{{ message }}</view>
+
+<view>
+  {{ firstName + lastName }}
+</view>
+
+<view>
+  {{ date }}
+</view>
+
+<!-- 2.if条件判断 -->
+<view wx:if="{{ score > 90}}">优秀</view>
+<view wx:elif="{{ score > 60}}">良好</view>
+<view wx:elif="{{ score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+
+<!-- 3.hidden属性, 默认为false, true为隐藏-->
+<view hidden="{{ false }}">我是hidden view</view>
+
+<!-- 切换案例 -->
+<view hidden="{{ isHidden }}">哈哈哈</view>
+<button bindtap="onChangeHidden">点击显示/隐藏</button>
+
+<!-- 4.wx:for的基本使用 -->
+<!-- 遍历data中的数组 -->
+<view>
+  <view wx:for="{{ books }}" wx:key="id">
+    <!-- item: 每项内容, index: 每项索引 -->
+    {{ item.name }} {{ item.price }} {{ index}}
+  </view>
+</view>
+
+<!-- 遍历数字 -->
+<view>
+  <view wx:for="{{ 10 }}" wx:key="*this">
+    {{ item }}
+  </view>
+</view>
+
+<!-- 遍历字符串 -->
+<view>
+  <view wx:for="coderzxx" wx:key="*this">
+    {{ item }}
+  </view>
+</view>
+
+<!-- block标签: === vue中的template -->
+<view>
+  <block wx:for="{{ books }}" wx:key="id">
+    <view>
+      {{ item.name }}
+    </view>
+  </block>
+</view>
+
+<!-- 自定义item名称 -->
+<view>
+  <block wx:for="{{ books }}" wx:key="id" wx:for-item="bookItem">
+    <view>
+      {{ bookItem.name }}
+    </view>
+  </block>
+</view>
+
+<!-- 自定义index名称 -->
+<view>
+  <block wx:for="{{ books }}" wx:key="id" wx:for-index="bookIndex">
+    <view>
+      {{ bookIndex }}
+    </view>
+  </block>
+</view>

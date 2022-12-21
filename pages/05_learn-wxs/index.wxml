@@ -1,0 +1,39 @@
+<!-- 方式一: wxs标签 -->
+
+<wxs module="format">
+  function formatPrice(price) {
+    return "¥" + price
+  }
+
+  module.exports.formatPrice = formatPrice
+</wxs>
+
+<view>
+  <block wx:for="{{ books }}" wx:key="id">
+    <view>
+      书名:{{ item.name }} - 价格:{{ format.formatPrice(item.price) }}
+    </view>
+  </block>
+</view>
+
+<!-- 方式二: 独立的文件,通过src引入 -->
+<wxs module="format" src="/utils/format.wxs"></wxs>
+
+<view>
+  <block wx:for="{{ books }}" wx:key="id">
+    <view>
+      书名:{{ item.name }} - 价格:{{ format.totalPrice(books) }}
+    </view>
+  </block>
+</view>
+
+
+<!-- 练习: 对数字进行格式化 -->
+<view>
+  当前播放: {{ format.formatCount(playCount) }}
+</view>
+
+<!-- 练习: 对时间进行格式化 -->
+<view>
+  时间: {{ format.formatTime(time) }}
+</view>

@@ -1,0 +1,50 @@
+
+<view>-------------- text组件 ----------------</view>
+<text class="title"	user-select>{{ message }}</text>
+<text decode>你好啊 &gt;</text>
+
+
+<view>-------------- button组件 ----------------</view>
+<button size="default">默认按钮</button>
+<button size="mini">按钮大小</button>
+
+<button size="mini" type="default">按钮类型-默认按钮</button>
+<button size="mini" type="primary">按钮类型-成功按钮</button>
+<button size="mini" type="warn">按钮类型-警告按钮</button>
+
+<button plain>镂空按钮</button>
+
+<button disabled>禁用按钮</button>
+
+<button loading>加载按钮</button>
+
+<button open-type="contact">打开客服会话</button>
+<button open-type="getUserInfo" bindtap="getUserInfo">获取用户信息</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取用户手机号</button>
+
+<view>-------------- image组件 ----------------</view>
+<image src="/assets/zznh.png" mode="widthFix"/>
+<image src="/assets/nhlt.jpg" alt=""/>
+
+<view>-- 选择本地图片: 将本地图片使用image展示出来 --</view>
+<button bindtap="onChooseImage">选择图片</button>
+<image src="{{ chooseImage }}" mode="widthFix"/>
+
+<!-- --------- scroll-view组件 ------------- -->
+<!-- <scroll-view class="scrollbox" scroll-y>
+  <block wx:for="{{ list }}">
+    <view class="item" style="background-color: {{ item }};">{{ item }}</view>
+  </block>
+</scroll-view> -->
+
+<scroll-view
+ class="scrollbox" 
+ enable-flex 
+ scroll-x
+ bindscrolltoupper="onUpper"
+ bindscrolltolower="onLower"
+ >
+  <block wx:for="{{ list }}" wx:key="*this">
+    <view class="item" style="background-color: {{ item }};">{{ item }}</view>
+  </block>
+</scroll-view>

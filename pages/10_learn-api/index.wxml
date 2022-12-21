@@ -1,0 +1,11 @@
+<button bindtap="onToastTap">显示消息提示框</button>
+<button bindtap="onModalTap">奥迪A8L</button>
+<button bindtap="onActionSheetTap">显示操作菜单</button>
+<button bindtap="onGetLocationTap">点击获取用户位置信息</button>
+<button bindtap="onGetSystemInfoTap">点击获取用户设备的系统信息</button>
+<button bindtap="onSetStorageAsyncTap">异步存储storage</button>
+<button bindtap="onGetStorageAsyncTap">异步获取storage</button>
+<button bindtap="onRemoveStorageAsyncTap">异步移除storage</button>
+<button bindtap="onSetStorageTap">同步存储storage</button>
+<button bindtap="onGetStorageTap">同步获取storage</button>
+<button bindtap="onRemoveStorageTap">同步移除storage</button>

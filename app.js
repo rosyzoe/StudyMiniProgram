@@ -1,19 +1,20 @@
 // app.js
 App({
-  onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+  onLaunch(options) {
+    console.log("小程序启动", options);
   },
+  // 判断进入的不同场景
+  onShow(options) {
+    console.log("onShow", options);
+  },
+  onHide(options) {
+    console.log("onHide", options);
+  },
+
+  // 数据不是响应式的,这里共享的数据通常是一些固定的数据
   globalData: {
-    userInfo: null
+    userName: "coderzxx",
+    age: 18,
+    height: 1.88
   }
 })

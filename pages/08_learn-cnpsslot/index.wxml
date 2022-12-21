@@ -1,0 +1,22 @@
+
+<!-- 1.单个插槽的使用 -->
+<!-- <my-slot>
+  <button>按钮</button>
+</my-slot>
+
+<my-slot>
+  <image src="/assets/zznh.png" mode="widthFix"/>
+</my-slot>
+
+<my-slot></my-slot>
+<my-slot></my-slot> -->
+
+<!-- 2.多个插槽的使用 -->
+<!-- <mul-slot>
+  <text slot="left">left</text>
+  <text slot="center">我是内容</text>
+  <text slot="right">right</text>
+</mul-slot> -->
+
+<!-- 3.组件的生命周期 -->
+<c-lifetimes></c-lifetimes>
